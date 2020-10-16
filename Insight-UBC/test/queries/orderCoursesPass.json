@@ -1,0 +1,37 @@
+{
+    "title": "Order courses by pass",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_pass",
+                "courses_avg"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_pass": 9,
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 9,
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_pass": 16,
+            "courses_avg": 99.19
+        }
+    ]
+}
+

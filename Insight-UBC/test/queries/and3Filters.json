@@ -1,0 +1,54 @@
+{
+    "title": "Testing AND with 3 filters",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 83
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_pass": 295
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_year": 2011
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "biol",
+            "courses_id": "112",
+            "courses_avg": 83.68,
+            "courses_instructor": "smith, karen",
+            "courses_title": "biology of cell",
+            "courses_pass": 306,
+            "courses_fail": 4,
+            "courses_audit": 0,
+            "courses_uuid": "24719",
+            "courses_year": 2016
+        }
+    ]
+}

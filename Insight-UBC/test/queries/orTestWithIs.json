@@ -1,0 +1,58 @@
+{
+    "title": "Testing OR with IS inside",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "courses_uuid": "69216"
+                    }
+                },
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 2018
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_title": "guid pln dcsn mk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 70.66,
+            "courses_instructor": "munteanu, mircea",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 51,
+            "courses_fail": 5,
+            "courses_audit": 0,
+            "courses_uuid": "69216",
+            "courses_year": 2014
+        }
+    ]
+}

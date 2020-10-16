@@ -1,0 +1,82 @@
+{
+    "title": "Testing AND with OR inside",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 98
+                    }
+                },
+                {
+                    "OR": [
+                        {
+                            "IS": {
+                                "courses_dept": "spph"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_title": "career planning"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "spph",
+            "courses_id": "300",
+            "courses_avg": 98.98,
+            "courses_instructor": "frank, erica",
+            "courses_title": "work int health",
+            "courses_pass": 82,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "65069",
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "spph",
+            "courses_id": "300",
+            "courses_avg": 98.98,
+            "courses_instructor": "",
+            "courses_title": "work int health",
+            "courses_pass": 82,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "65070",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "574",
+            "courses_avg": 99.19,
+            "courses_instructor": "cox, daniel",
+            "courses_title": "career planning",
+            "courses_pass": 16,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "26777",
+            "courses_year": 2012
+        }
+    ]
+}

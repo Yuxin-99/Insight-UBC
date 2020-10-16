@@ -1,0 +1,36 @@
+{
+    "title": "Order courses by uuid",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_avg"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_uuid": "26777",
+            "courses_avg": 99.19
+        },
+        {
+            "courses_dept": "math",
+            "courses_uuid": "5373",
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_uuid": "5374",
+            "courses_avg": 99.78
+        }
+    ]
+}

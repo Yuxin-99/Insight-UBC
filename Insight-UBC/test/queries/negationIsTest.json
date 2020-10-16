@@ -1,0 +1,29 @@
+{
+    "title": "Testing Negating IS",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "IS": {
+                    "courses_dept": "math"
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": "ResultTooLargeError"
+}

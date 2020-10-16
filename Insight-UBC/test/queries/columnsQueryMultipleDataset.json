@@ -1,0 +1,18 @@
+{
+    "title": "Columns query multiple dataset",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "rooms_audit"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Columns referenced empty string dataset",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["_audit"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

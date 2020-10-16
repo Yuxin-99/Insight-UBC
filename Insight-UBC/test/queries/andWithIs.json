@@ -1,0 +1,283 @@
+{
+    "title": "Testing AND with IS inside",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_title": "guid pln dcsn mk"
+                    }
+                },
+                {
+                    "NOT": {
+                        "AND": [
+                            {
+                                "IS": {
+                                    "courses_instructor": "munteanu, mircea"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 75.9,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 117,
+            "courses_fail": 7,
+            "courses_audit": 0,
+            "courses_uuid": "69218",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 76.82,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 44,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "14124",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 77.65,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 128,
+            "courses_fail": 2,
+            "courses_audit": 0,
+            "courses_uuid": "80729",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 77.84,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 29,
+            "courses_fail": 3,
+            "courses_audit": 0,
+            "courses_uuid": "59088",
+            "courses_year": 2008
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 77.91,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 53,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "26765",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 78.02,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 48,
+            "courses_fail": 2,
+            "courses_audit": 0,
+            "courses_uuid": "5684",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 78.05,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 126,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "50975",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 78.2,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 51,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "33356",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 79.2,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 136,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "70440",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 79.59,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 142,
+            "courses_fail": 3,
+            "courses_audit": 0,
+            "courses_uuid": "82350",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 80.23,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 53,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "91131",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 80.78,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 124,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "15580",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 81.51,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 40,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "87766",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 81.51,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 43,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "59089",
+            "courses_year": 2008
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 81.75,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 138,
+            "courses_fail": 2,
+            "courses_audit": 0,
+            "courses_uuid": "25316",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 81.94,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 98,
+            "courses_fail": 3,
+            "courses_audit": 0,
+            "courses_uuid": "59090",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 83.39,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 33,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "60061",
+            "courses_year": 2008
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 83.39,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 33,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "60062",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 87.69,
+            "courses_instructor": "",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 26,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "59087",
+            "courses_year": 2008
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "427",
+            "courses_avg": 89.7,
+            "courses_instructor": "farzamian, farideh",
+            "courses_title": "guid pln dcsn mk",
+            "courses_pass": 27,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "25313",
+            "courses_year": 2010
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "title": "Testing GT Comparison - pass",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": 2993
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.91,
+            "courses_instructor": "",
+            "courses_title": "strat univ writ",
+            "courses_pass": 2994,
+            "courses_fail": 63,
+            "courses_audit": 0,
+            "courses_uuid": "41461",
+            "courses_year": 1900
+        }
+    ]
+}

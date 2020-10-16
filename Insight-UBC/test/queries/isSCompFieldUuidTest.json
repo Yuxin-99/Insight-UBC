@@ -1,0 +1,49 @@
+{
+    "title": "Testing IS Field UUID",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_uuid": "33995"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 50
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_id": "105",
+            "courses_avg": 67.38,
+            "courses_instructor": "liu, keqin;tba",
+            "courses_title": "int calc ap c&ss",
+            "courses_pass": 73,
+            "courses_fail": 7,
+            "courses_audit": 0,
+            "courses_uuid": "33995",
+            "courses_year": 2013
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "title": "idString contains underscore",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "c_c_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "c_c_dept",
+                "c_c_dept",
+                "c_c_dept",
+                "c_c_id",
+                "c_c_avg",
+                "c_c_instructor",
+                "c_c_title",
+                "c_c_pass",
+                "c_c_fail",
+                "c_c_audit",
+                "c_c_uuid",
+                "c_c_year"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

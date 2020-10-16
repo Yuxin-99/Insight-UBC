@@ -1,0 +1,16 @@
+{
+    "title": "Columns input not the expected type string",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [ {}
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

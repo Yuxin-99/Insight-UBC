@@ -1,0 +1,36 @@
+{
+    "title": "Order courses by fail",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_fail",
+                "courses_avg"
+            ],
+            "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_fail": 0,
+            "courses_avg": 99.19
+        },
+        {
+            "courses_dept": "math",
+            "courses_fail": 0,
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_fail": 0,
+            "courses_avg": 99.78
+        }
+    ]
+}

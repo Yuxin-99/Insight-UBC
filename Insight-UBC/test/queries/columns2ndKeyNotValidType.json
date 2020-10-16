@@ -1,0 +1,18 @@
+{
+    "title": "2nd key not valid type in columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                {}
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

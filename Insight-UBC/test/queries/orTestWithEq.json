@@ -1,0 +1,79 @@
+{
+    "title": "Testing OR with EQ inside",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "EQ": {
+                        "courses_avg": 50
+                    }
+                },
+                {
+                    "NOT": {
+                        "AND": [
+                            {
+                                "GT": {
+                                    "courses_year": 1800
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "busi",
+            "courses_id": "441",
+            "courses_avg": 50,
+            "courses_instructor": "",
+            "courses_title": "rl es manage i",
+            "courses_pass": 3,
+            "courses_fail": 2,
+            "courses_audit": 0,
+            "courses_uuid": "11135",
+            "courses_year": 2013
+        },
+        {
+            "courses_dept": "chbe",
+            "courses_id": "474",
+            "courses_avg": 50,
+            "courses_instructor": "",
+            "courses_title": "proc ctrl eng",
+            "courses_pass": 7,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "56484",
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_id": "315",
+            "courses_avg": 50,
+            "courses_instructor": "king, mary ann",
+            "courses_title": "childhood & adol",
+            "courses_pass": 1,
+            "courses_fail": 0,
+            "courses_audit": 0,
+            "courses_uuid": "78941",
+            "courses_year": 2009
+        }
+    ]
+}

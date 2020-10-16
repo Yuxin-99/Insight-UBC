@@ -1,0 +1,28 @@
+{
+    "title": "idString contains all whitespace characters",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "c_c_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "  _dept",
+                "  _dept",
+                "  _dept",
+                "  _id",
+                "  _avg",
+                "  _instructor",
+                "  _title",
+                "  _pass",
+                "  _fail",
+                "  _audit",
+                "  _uuid",
+                "  _year"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

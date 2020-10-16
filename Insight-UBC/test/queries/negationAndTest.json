@@ -1,0 +1,111 @@
+{
+    "title": "Testing Negating And - pass & avg",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "AND": [
+                    {
+                        "GT": {
+                            "courses_avg": 0
+                        }
+                    },
+                    {
+                        "LT": {
+                            "courses_pass": 2600
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "frst",
+            "courses_id": "202",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_title": "forest ecology",
+            "courses_pass": 0,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "89536",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_id": "100",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_title": "in land food com",
+            "courses_pass": 0,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "56402",
+            "courses_year": 2009
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_id": "100",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_title": "in land food com",
+            "courses_pass": 0,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "56403",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 71.91,
+            "courses_instructor": "",
+            "courses_title": "strat univ writ",
+            "courses_pass": 2994,
+            "courses_fail": 63,
+            "courses_audit": 0,
+            "courses_uuid": "41461",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 72.91,
+            "courses_instructor": "",
+            "courses_title": "strat univ writ",
+            "courses_pass": 2698,
+            "courses_fail": 79,
+            "courses_audit": 0,
+            "courses_uuid": "42865",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "engl",
+            "courses_id": "112",
+            "courses_avg": 73.17,
+            "courses_instructor": "",
+            "courses_title": "strat univ writ",
+            "courses_pass": 2655,
+            "courses_fail": 52,
+            "courses_audit": 0,
+            "courses_uuid": "64334",
+            "courses_year": 1900
+        }
+    ]
+}

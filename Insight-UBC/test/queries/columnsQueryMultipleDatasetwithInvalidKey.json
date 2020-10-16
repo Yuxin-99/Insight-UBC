@@ -1,0 +1,18 @@
+{
+    "title": "Columns query multiple dataset with invalid key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "rooms_audi"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
